@@ -1,0 +1,10 @@
+{
+	"apps": [{
+		"name": "discord-wrangler",
+		"wait_ready": true,
+		"log_date_format": "DD-MM-YYYY HH:mm:ss.SSS",
+		"script": "./index.js",
+		"time": true,
+		"watch": ["./src"]
+	}]
+}

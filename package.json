@@ -1,0 +1,18 @@
+{
+  "name": "discord-wrangler",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "pm2 start config/pm2.json --env=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scrimba/discord-wrangler.git"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "imba": "^2.0.0-alpha.100",
+    "knex": "^0.21.15",
+    "pg": "^8.5.1",
+    "pg-pool": "^3.2.2"
+  }
+}
