@@ -17,9 +17,11 @@ client.on 'message' do |msg|
 	switch msg.content
 		when 'ping'
 			msg.reply('Pong!')
+		when 'connect'
+			return msg.reply('Connect scrimba and discord by being logged in and going to: https://scrimba.com/discord/connect')
 		when 'help'
 			msg.reply("You have to most of the work, but here are some things I can help you with:")
-			msg.reply(" `help` - You are looking at it!")
+			msg.reply(" `connect` - Instructions on how to connect your Scrimba user and Discord user")
 			msg.reply(" `pro` - I´ll flag you as a pro user if you have an active scrimba subscription")
 		when 'pro'
 			console.log "Pro request from user {msg.author.id} - {msg.author.username}"
