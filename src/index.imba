@@ -11,6 +11,9 @@ client.on 'ready' do
 	console.log("Logged in as {client.user.tag}!")
 
 client.on 'message' do |msg|
+	unless msg.channel.type == 'dm'
+		return
+
 	switch msg.content
 		when 'ping'
 			msg.reply('Pong!')
